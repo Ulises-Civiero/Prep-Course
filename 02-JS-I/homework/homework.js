@@ -119,35 +119,34 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return Match.pow(num,2);
-  
+ return num*num;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return Match.pow(num,3);
+  return num*num*num;
   
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return Match.pow(num,exponent);
+  return Math.pow(num,exponent);
   
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Match.round(num);
+  return Math.round(num);
   
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Match.ceil(num);
+  return Math.ceil(num);
 
   
 }
@@ -195,7 +194,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "hola "+nombre+"!";
+  return "Hola "+nombre+"!";
   
 }
 
@@ -242,23 +241,13 @@ function esVocal(letra){
   {
     return "Dato incorrecto";
   }
-  function verificar(letra,vocal)
+  
+  if(letra==="a"||letra==="e"|| letra==="i"||letra==="o"||letra==="u")
   {
-    if(letra==vocal)
-    {
-      return "Es vocal";
-
-    }
-    return;
+    return "Es vocal";
   }
-  verificar(letra,a);
-  verificar(letra,e);
-  
-  verificar(letra,i);
-  verificar(letra,o);
-  verificar(letra,u);
-  
-  
+  else return "Dato incorrecto";
+ 
 }
 
 
