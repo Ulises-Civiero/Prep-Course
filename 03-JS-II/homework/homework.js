@@ -186,7 +186,7 @@ function operadoresLogicos(num1, num2, num3) {
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   if(num1===0||num2===0||num3===0)
   {
-    return "error";
+    return "Error";
   }
   else if(num1<0||num2<0||num3<0)
   {
@@ -198,7 +198,8 @@ function operadoresLogicos(num1, num2, num3) {
   }
   else if(num3>num2&&num1<num3)
   {
-    return num3++;
+
+    return num3+1 ;
   }
   else{return false;}
   
@@ -211,11 +212,9 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if(numero%numero===0&&numero%1===0)
-  {
-    return true;
-  }
-  else{return false;}
+
+  
+ 
 }
 
 function esVerdadero(valor){
@@ -235,10 +234,7 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí 
   
-  for(let x=0; x<11;x++)
-  {
-    return 6*x;
-  }
+  
   
   
 }
@@ -258,15 +254,15 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  let resultado=0;
-  let x=0;
-  do
+  var x=0;
+  while(x<8)
   {
-  numero+5;
-  resultado= resultado+ numero;
-  x++;
+    numero=numero+5;
+    x++;
   }
-  while(x<9);
+  return numero;
+  
+
 }
 
 
