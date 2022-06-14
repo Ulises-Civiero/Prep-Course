@@ -212,8 +212,22 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-
-  
+  if(numero===0 || numero===1)
+  {
+    return false;
+  }
+    else
+    {
+      for(let x=2;x<numero;x++)
+      {
+        if(numero%x===0)
+        {
+          return false;
+        }
+       
+      }
+      return true;
+    }
  
 }
 
@@ -233,9 +247,12 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí 
-  
-  
-  
+  const resultados=[];
+  for(let x=0;x<11;x++)
+  {
+    resultados.push(x*6);
+  }
+  return resultados;
   
 }
 
